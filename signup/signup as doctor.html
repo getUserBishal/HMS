@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Butwal MC</title>
+    <meta name="keywords" content="Butwal MC " />
+    <meta name="description" content="Butwal MC" />
+    <style>
+      .aa {
+        width: 450px;
+        height: 1000px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <div id="nav-placeholder"></div>
+
+    <div class="aa" style="background-color: rgba(0, 0, 0, 0.5)">
+      <form method="post" action="signup as doctor.php">
+        <h1 style="color: skyblue" align="center">SIGN UP</h1>
+
+        <input
+          type="text"
+          name="name"
+          placeholder=" Your Name...."
+          required
+        />| Name<br /><br />
+
+        <input
+          type="date"
+          name="dob"
+          placeholder=" Your Date Of Birth...."
+          required
+        />| DOB<br /><br />
+
+        <input
+          type="text"
+          name="docid"
+          placeholder=" Your Doctor Id...."
+          required
+        />| DoctorID<br /><br />
+
+        <input
+          type="email"
+          name="mail"
+          placeholder="Your Mail Id...."
+          required
+        />| Email <br /><br />
+
+        <input
+          type="text"
+          name="address"
+          placeholder="Your Address...."
+          required
+        />| Address<br /><br />
+
+        <input
+          type="text"
+          name="phno"
+          placeholder=" Your Phone number...."
+          required
+        />| Phone <br /><br />
+
+        <input
+          type="text"
+          name="qualification"
+          placeholder=" Your Qualification...."
+          required
+        />| Quali<br /><br />
+
+        <input
+          type="text"
+          name="department"
+          placeholder=" Your Depatment...."
+          required
+        />| Depart<br /><br />
+
+        <input
+          type="text"
+          name="uname"
+          placeholder=" Username...."
+          required
+        />| Username<br /><br />
+
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Enter Password...."
+          required
+        />| Password<br /><br />
+
+        <input
+          type="password"
+          name="repass"
+          id="rpass"
+          placeholder="Re Enter Password...."
+          required
+        />| Re-enter P<br /><br />
+        <input
+          type="submit"
+          value="SIGN UP"
+          onclick="pass()"
+          name="submit"
+          style="background-color: skyblue"
+        />
+        <p style="font-size: 25px">
+          Already a User?, <a href="../login/login as doctor.html">Login</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
