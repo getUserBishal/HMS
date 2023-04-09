@@ -74,6 +74,7 @@ require "conn.php";
         if (!isset($_SESSION["name"])) {
             echo "<script>window.location='login/login as doctor.html'</script>";
         }
+    //comments wheere necessary
         ?>
     <div class="container-fluid" style="padding: 30px 20px 0px 40px;">
         <div class="row">
